@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap');
+
+$f-color-light:#FFFFFF;
+
+$pm-12:12px;
+$pm-16:16px;
+$pm-20:20px;
+$pm-24:24px;
+$pm-28:28px;
+$pm-32:32px;
+$pm-40:40px;
+$pm-48:48px;
+$pm-56:56px;
+$pm-64:64px;
+$pm-68:68px;
+
+.fz-20 {
+    font-size: 20px;
+   
+}
+
+.fz-24 {
+    font-size: 24px;
+}
+
+.fz-64 {
+    font-size: 64px;
+}
+
+.fz-80 {
+    font-size: 80px;
+
+}
+
+
+
+
+
+
+
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+.header {
+    height: 958px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/bg/photo-bg.png") center;
+
+    .header-content {
+        width: 310px;
+        outline: solid 1px red;
+        color: $f-color-light;
+        h1 {
+            margin-bottom: $pm-32;
+        }
+        p {
+            margin-bottom: $pm-40;
+            line-height: 1.5;
+        }
+
+    }
+    .header-content .content-sns{
+        display: flex;
+        justify-content: space-between;
+        a {
+            width: 60px;
+            height: 60px;
+          
+        }
+       
+    }
+
+    
+}

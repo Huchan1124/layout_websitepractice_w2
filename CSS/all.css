@@ -21,6 +21,13 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .header {
@@ -34,7 +41,6 @@ body {
 
 .header .header-content {
   width: 310px;
-  outline: solid 1px red;
   color: #FFFFFF;
 }
 
@@ -44,7 +50,6 @@ body {
 
 .header .header-content p {
   margin-bottom: 40px;
-  line-height: 1.5;
 }
 
 .header .header-content .content-sns {
@@ -55,5 +60,42 @@ body {
 .header .header-content .content-sns a {
   width: 60px;
   height: 60px;
+}
+
+.about {
+  padding: 56px 0 56px 0;
+}
+
+.about .about-title {
+  margin-bottom: 40px;
+}
+
+.about .about-self-intro {
+  border-bottom: 1px solid #000;
+  width: 412px;
+  margin-top: 20px;
+  padding-bottom: 24px;
+}
+
+.about .about-self-intro li:nth-child(2) {
+  margin-bottom: 8px;
+}
+
+.about .about-self-exp {
+  padding-top: 28px;
+}
+
+.about .about-self-exp li {
+  margin-bottom: 24px;
+}
+
+.about .about-self-exp li::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #891818;
+  margin-right: 16px;
 }
 /*# sourceMappingURL=all.css.map */

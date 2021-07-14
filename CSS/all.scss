@@ -45,8 +45,18 @@ $pm-68:68px;
 
 body {
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
     
 }
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
 
 
 .header {
@@ -59,14 +69,13 @@ body {
 
     .header-content {
         width: 310px;
-        outline: solid 1px red;
         color: $f-color-light;
         h1 {
             margin-bottom: $pm-32;
         }
         p {
             margin-bottom: $pm-40;
-            line-height: 1.5;
+          
         }
 
     }
@@ -82,4 +91,45 @@ body {
     }
 
     
+}
+
+
+.about {
+    padding: $pm-56 0 $pm-56 0 ;
+    .about-title{
+        margin-bottom: $pm-40;
+    }
+
+    .about-self-intro{
+       border-bottom: 1px solid #000;
+       width: 412px;
+       margin-top: $pm-20;
+       padding-bottom:$pm-24;
+       li:nth-child(2){
+        margin-bottom: 8px;
+      
+       }
+
+    }
+
+    .about-self-exp {
+        padding-top:$pm-28;
+        li {
+            margin-bottom:$pm-24;
+
+            &::before{
+                content:"";
+                display:inline-block;
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                background-color: #891818;
+                margin-right:$pm-16;
+               
+
+            }
+        }
+    }
+
+
 }

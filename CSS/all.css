@@ -16,11 +16,12 @@
 }
 
 *, *::before, *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.5;
 }
 
@@ -32,31 +33,37 @@ body {
 
 .header {
   height: 958px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: url("../img/bg/photo-bg.png") center;
 }
-
 .header .header-content {
   width: 310px;
   color: #FFFFFF;
 }
-
 .header .header-content h1 {
   margin-bottom: 32px;
 }
-
 .header .header-content p {
   margin-bottom: 40px;
 }
-
 .header .header-content .content-sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-
 .header .header-content .content-sns a {
   width: 60px;
   height: 60px;
@@ -65,30 +72,24 @@ body {
 .about {
   padding: 56px 0 56px 0;
 }
-
 .about .about-title {
   margin-bottom: 40px;
 }
-
 .about .about-self-intro {
   border-bottom: 1px solid #000;
   width: 412px;
   margin-top: 20px;
   padding-bottom: 24px;
 }
-
 .about .about-self-intro li:nth-child(2) {
   margin-bottom: 8px;
 }
-
 .about .about-self-exp {
   padding-top: 28px;
 }
-
 .about .about-self-exp li {
   margin-bottom: 24px;
 }
-
 .about .about-self-exp li::before {
   content: "";
   display: inline-block;
@@ -98,4 +99,29 @@ body {
   background-color: #891818;
   margin-right: 16px;
 }
-/*# sourceMappingURL=all.css.map */
+
+.brand {
+  color: #FFFFFF;
+  background: #000;
+}
+.brand .brand-content {
+  padding-top: 56px;
+}
+.brand .brand-content .brand-intro {
+  padding-top: 12px;
+  padding-bottom: 68px;
+}
+.brand .brand-content .brand-intro li:nth-child(1) {
+  margin-bottom: 32px;
+}
+.brand .brand-content .brand-imgs li:nth-child(1) {
+  margin-bottom: 40px;
+}
+.brand .brand-content .brand-imgs li:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}

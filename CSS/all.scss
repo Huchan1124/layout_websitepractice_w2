@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap');
 
-$f-color-light:#FFFFFF;
+$text-color-light:#FFFFFF;
 
 $pm-12:12px;
 $pm-16:16px;
@@ -69,7 +69,7 @@ body {
 
     .header-content {
         width: 310px;
-        color: $f-color-light;
+        color: $text-color-light;
         h1 {
             margin-bottom: $pm-32;
         }
@@ -131,5 +131,35 @@ body {
         }
     }
 
+
+}
+
+.brand {
+    color: $text-color-light;
+    background: #000;
+
+    .brand-content{
+        padding-top:$pm-56;
+
+        .brand-intro {
+            padding-top:$pm-12 ;
+            padding-bottom: $pm-68;
+            li:nth-child(1) {
+                margin-bottom: $pm-32;
+            }
+    
+        }
+        .brand-imgs {
+            li:nth-child(1) {
+                margin-bottom: $pm-40;
+            }
+            li:nth-child(2) {
+                display: flex;
+                justify-content: space-between;
+            } 
+        }
+
+    }
+   
 
 }

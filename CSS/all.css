@@ -23,6 +23,7 @@
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
+  font-weight: bold;
 }
 
 .container {
@@ -103,25 +104,43 @@ body {
 .brand {
   color: #FFFFFF;
   background: #000;
-}
-.brand .brand-content {
   padding-top: 56px;
+  padding-bottom: 160px;
 }
-.brand .brand-content .brand-intro {
+.brand .brand-intro {
   padding-top: 12px;
   padding-bottom: 68px;
 }
-.brand .brand-content .brand-intro li:nth-child(1) {
+.brand .brand-intro li:nth-child(1) {
   margin-bottom: 32px;
 }
-.brand .brand-content .brand-imgs li:nth-child(1) {
+.brand .brand-imgs li:nth-child(1) {
   margin-bottom: 40px;
 }
-.brand .brand-content .brand-imgs li:nth-child(2) {
+.brand .brand-imgs li:nth-child(2) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.works {
+  padding-top: 56px;
+  padding-bottom: 144px;
+}
+.works .works-intro {
+  margin-bottom: 56px;
+}
+.works .works-imgs li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.works .works-imgs li:nth-child(1), .works .works-imgs li:nth-child(2) {
+  margin-bottom: 48px;
 }

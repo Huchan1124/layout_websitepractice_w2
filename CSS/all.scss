@@ -46,6 +46,7 @@ $pm-68:68px;
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
+    font-weight: bold;
     
 }
 
@@ -137,11 +138,9 @@ body {
 .brand {
     color: $text-color-light;
     background: #000;
-
-    .brand-content{
-        padding-top:$pm-56;
-
-        .brand-intro {
+    padding-top:$pm-56;
+    padding-bottom: 160px;
+    .brand-intro {
             padding-top:$pm-12 ;
             padding-bottom: $pm-68;
             li:nth-child(1) {
@@ -149,7 +148,7 @@ body {
             }
     
         }
-        .brand-imgs {
+    .brand-imgs {
             li:nth-child(1) {
                 margin-bottom: $pm-40;
             }
@@ -158,8 +157,25 @@ body {
                 justify-content: space-between;
             } 
         }
+}
 
+.works {
+    padding-top: $pm-56;
+    padding-bottom: 144px;
+    .works-intro {
+        margin-bottom: $pm-56;
     }
-   
+    .works-imgs {
+        li {
+            display: flex;
+            justify-content: space-between;
+        }
 
+        li:nth-child(1), li:nth-child(2) {
+            margin-bottom:$pm-48;
+        }
+
+     
+    
+    }
 }

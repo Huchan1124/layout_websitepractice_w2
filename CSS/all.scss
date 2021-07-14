@@ -33,12 +33,6 @@ $pm-68:68px;
 }
 
 
-
-
-
-
-
-
 *,*::before,*::after{
     box-sizing: border-box;
 }
@@ -50,15 +44,18 @@ body {
     
 }
 
+a {
+    text-decoration: none;
+    color: $text-color-light;
+  
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
     text-align: center;
 
 }
-
-
-
 
 .header {
     height: 958px;
@@ -177,5 +174,18 @@ body {
 
      
     
+    }
+}
+
+.footer {
+    color: $text-color-light;
+    background: #000;
+    padding:$pm-64 0;
+    .footer-contact {
+        padding: $pm-16;
+        li:nth-child(1) {
+            margin-bottom:$pm-16; ;
+        }
+       
     }
 }
